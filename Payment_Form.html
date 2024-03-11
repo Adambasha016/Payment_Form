@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Payment Form</title>
+	<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+	<div class="container"> 
+	<form action="" method="get">
+		<h1 class="main"> Payment Form</h1>
+		<hr> 
+		<!-- <p> Required fildes  *</p> -->
+		<h2> User Information </h2>
+		<p> Name: * 
+			<input type="text" name="name" required="" placeholder="Sam Karan">
+		</p>
+		<fieldset>
+		 <legend> Gender</legend>
+		<p>
+		Male <input type="radio" name="gender" id="male" value="M" required=""> 
+		Female <input type="radio" name="gender" id="Femal">
+		</p>  
+		</fieldset>
+		<p> Address:
+		 <textarea required="" placeholder="Enter your Address.. "name="address" id="address" cols="500" rows="8" > </textarea>
+		</p>
+        <p> Email: * 
+        	<input type="email" name="email" id="email" required="" placeholder="sam@gmail.com">
+        </p>
+        <p> Pincode:<input type="number" name="number" id="Pincode" placeholder="123456">
+     </p>
+        <h2> Payment information </h2>
+       <p>Accepted Cards :</p>
+       <span class="all"> 
+       <span class="box"> <img src="Mega project/paymentImg/visa.png "></span>
+       <span class="box"> <img src="Mega project/paymentImg/Am.png "></span>
+       <span class="box"> <img src="Mega project/paymentImg/mastercard.png "></span>
+       <span class="box"> <img src="Mega project/paymentImg/HB.png "></span>
+</span>
+
+
+      <!--  <dir class="box9"> 
+       <div class="box1"><img src="Mega project/paymentImg/visa.png"> </div>
+       <dir class="box2"> <img src="Mega project/paymentImg/Am.png"></dir>
+       <div class="box3"> <img src=" Mega project/paymentImg/mastercard.png"></div>
+       <div class="box4"> <img src=" Mega project/paymentImg/HB.png"></div>
+        </dir> -->
+        <p> Card type:
+         <select name="card_type" id="card_type">
+             <option value="">--select a card type-- </option>
+             <option value="visa"> Visa </option>
+             <option value="rupy"> Rupy</option>
+             <option value="master"> Mastercard </option>
+          </select>
+        </p>
+        <p> 
+        Card Number <input type="number" name="card numm" placeholder="1111-2222-3333-4444"> 
+        </p>
+        <p>
+        Experation date: 
+        <input type="date" name="expe_date" id="expe_date"> 
+        </p>
+        <p> CVV
+         <input type="password" name="cvv" id="cvv" placeholder=" 123">
+     </p>
+         <input type="submit" name="payknow" value="Pay Now">
+	</form>
+</div>
+</body>
+</html> 
